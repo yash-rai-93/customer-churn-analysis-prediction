@@ -53,8 +53,8 @@ def main():
     st.sidebar.info('This app is created to predict Customer Churn')
     
     if add_selectbox == 'Online':
-        st.sidebar.image(image2, use_container_width=True)
-        st.image(image, use_container_width=False)
+        st.sidebar.image(image2, use_column_width=True)
+        st.image(image, use_column_width=False)
         
         st.title("Predicting Customer Churn")
     
@@ -164,8 +164,8 @@ def main():
     
     elif add_selectbox == 'Batch':
         st.empty()  # Hide previous content
-        st.sidebar.image(image5, use_container_width=True)
-        st.image(image6, use_container_width=False) 
+        st.sidebar.image(image5, use_column_width=True)
+        st.image(image6, use_column_width=False) 
         
         # Add GitHub link
         st.sidebar.markdown("### Download Full Resources")
