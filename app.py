@@ -167,25 +167,18 @@ def main():
         st.sidebar.image(image5, use_column_width=True)
         st.image(image6, use_column_width=False) 
         
-        # Add GitHub link
-        st.sidebar.markdown("### Download Full Resources")
-       
-        if st.sidebar.button("Download", key="github_download"):
-            st.sidebar.markdown(f"[on Github Repository](https://github.com/Vatanak8/Telecom-Customer-Churn-Analysis-Prediction)")
+ 
 
         # Add social media buttons with icons
         st.sidebar.markdown("### Get in Touch:")
 
-        linkedin_link = "https://www.linkedin.com/in/poch-vibolvatanak-507007157/"
-        medium_link = "https://medium.com/@pochvibolvatanak"
-        telegram_link = "https://t.me/VibolVatanak"
-        github_link = "https://github.com/Vatanak8"
+        linkedin_link = "https://www.linkedin.com/in/yash-rai-5235241a5/"
+        
+        github_link = "https://github.com/yash-rai-93"
 
         st.sidebar.markdown(
             f"""
             [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]({linkedin_link})
-            [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)]({medium_link})
-            [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)]({telegram_link})
             [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]({github_link})
             """
         )
