@@ -167,7 +167,7 @@ def main():
         st.sidebar.image(image5, use_column_width=True)
         st.image(image6, use_column_width=False) 
         
- 
+
 
         # Add social media buttons with icons
         st.sidebar.markdown("### Get in Touch:")
