@@ -72,7 +72,7 @@ Using the Customer Churn dataset as the source of our data. "Predict behavior to
 
  Explore our Streamlit web app featuring a robust churn prediction model powered by Gradient Boosting Classifier. Predicting churn probabilities with precision, this tool empowers businesses to preemptively retain valuable customers, optimizing retention strategies for enhanced profitability and customer satisfaction. With a user-friendly interface and actionable insights, stay ahead in the competitive landscape with our data-driven solution. 
 
-**Try it out! [Telecom Churn Prediction App](https://telecom-customer-churn-analysis-prediction.streamlit.app/)**
+**Try it out! [Telecom Churn Prediction App](https://customer-churn-analysis-prediction-5grm.onrender.com)**
 
 #### Prediction Options
 *Choose between online prediction for individual customers or batch prediction for multiple customer records. Get real-time insights or analyze churn in bulk, with detailed explanations and recommendations provided for both modes.*
@@ -97,7 +97,7 @@ The Customer Churn Prediction App may exhibit limitations such as potential bias
 4. **Take Action:** Based on the insights provided, businesses can take proactive steps to retain at-risk customers and improve overall customer satisfaction.
 5. **Download Results:** If needed, users can download the prediction results for further analysis or reporting purposes.
 
-**[Let's test it together!!](https://telecom-customer-churn-analysis-prediction.streamlit.app/)**
+**[Let's test it together!!](https://customer-churn-analysis-prediction-5grm.onrender.com)**
 
 #### I. Online Prediction
 *Predict churn for individual customers in real time.*
@@ -118,32 +118,60 @@ The Customer Churn Prediction App may exhibit limitations such as potential bias
 
 ## Installation
 
-To install and run the app locally, follow these steps:
+### Option 1 — Run Locally
 
 1.  **Clone Repository:**
     ```bash
-    git clone https://github.com/Vatanak8/Telecom-Customer-Churn-Analysis-Prediction
+    git clone https://github.com/yash-rai-93/customer-churn-analysis-prediction
+    cd customer-churn-analysis-prediction
     ```
 
-2.  **Environment Setup:**
+2.  **Install Dependencies:**
     ```bash
-    pip install -r requirements.txt 
+    pip install -r requirements.txt
     ```
 
 3.  **Launch App:**
     ```bash
-    streamlit run app.py 
+    streamlit run app.py
     ```
+
+### Option 2 — Run with Docker
+
+```bash
+docker build -t churn-app .
+docker run -p 8501:8501 churn-app
+```
+
+Then open [http://localhost:8501](http://localhost:8501) in your browser.
 
 ## Project Structure
 
-*   `data/`: Contains raw telecom datasets (.csv, .h5, or other format)
-*   `codels/`: Gradient Boosting model  (e.g., a .pkl or .joblib file)
-*   `code/`:  Script for data cleaning, feature engineering, and train/test splits.
-*   `app.py`: Core Streamlit application code. 
+```
+customer-churn-analysis-prediction/
+│
+├── app.py                                    # Core Streamlit application
+├── gradient_boosting_model.joblib            # Trained Gradient Boosting model
+├── requirements.txt                          # Python dependencies
+├── Dockerfile                                # Container deployment config
+├── .dockerignore                             # Docker build exclusions
+│
+├── images/                                   # UI assets used by the app
+│
+├── Telco-Customer-Churn.csv                  # Raw dataset
+├── tel_churn_clean.csv                       # Cleaned dataset
+│
+├── [ML] Customer Churn - EDA.ipynb           # Exploratory Data Analysis notebook
+├── [ML] Churn Analysis - Model Saving.ipynb  # Model training & saving notebook
+│
+└── Power BI/                                 # Power BI dashboard files
+```
 
+## 📨 Connect with me
 
-
-
+<p align="left">
+<a href="https://www.linkedin.com/in/yash-rai-5235241a5/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
+<a href="https://github.com/yash-rai-93" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="GitHub" height="30" width="40" /></a>
+</p>
 
 For further inquiries or to discuss potential collaborations, please feel free to connect with me.
