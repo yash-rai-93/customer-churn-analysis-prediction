@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from imblearn.combine import SMOTEENN
 import joblib
 import base64
 
@@ -31,7 +30,7 @@ def preprocess_data(batch_df):
     batch_df = batch_df.apply(pd.to_numeric, errors='coerce')
     
     # Handle missing values (if any)
-    batch_df.fillna(0, inplace=True)  # Replace NaN values with 0
+    batch_df = batch_df.fillna(0)  # Replace NaN values with 0
     
     return batch_df
 
@@ -54,8 +53,8 @@ def main():
     st.sidebar.info('This app is created to predict Customer Churn')
     
     if add_selectbox == 'Online':
-        st.sidebar.image(image2, use_column_width=True)
-        st.image(image, use_column_width=False)
+        st.sidebar.image(image2, use_container_width=True)
+        st.image(image, use_container_width=False)
         
         st.title("Predicting Customer Churn")
     
@@ -165,8 +164,8 @@ def main():
     
     elif add_selectbox == 'Batch':
         st.empty()  # Hide previous content
-        st.sidebar.image(image5, use_column_width=True)
-        st.image(image6, use_column_width=False) 
+        st.sidebar.image(image5, use_container_width=True)
+        st.image(image6, use_container_width=False) 
         
         # Add GitHub link
         st.sidebar.markdown("### Download Full Resources")

@@ -1,5 +1,4 @@
-![WA1 - 2 Prediction Option](https://github.com/Vatanak8/Telecom-Customer-Churn-Analysis-Prediction/assets/95983559/96aecb33-c24c-45e8-b7e6-e23144b5a00c)
-**Try it out! [Telecom Churn Prediction App](https://telecom-customer-churn-analysis-prediction.streamlit.app/)**
+
 
 
 # Telecom-Customer-Churn-Analysis-&-Prediction
@@ -143,16 +142,8 @@ To install and run the app locally, follow these steps:
 *   `code/`:  Script for data cleaning, feature engineering, and train/test splits.
 *   `app.py`: Core Streamlit application code. 
 
-<a name="credits"></a>
-## Credits
 
-- This Project is inspired by the video of the [YouTube Channel "Mr. Satyajit Pattnaik"](https://www.youtube.com/c/SatyajitPattnaik) 
 
-## 📨 Connect with me
-<p align="left">
-<a href="https://www.linkedin.com/in/vibolvatanak-poch-507007157/" target="_blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
-<a href="https://medium.com/@pochvibolvatanak" target="_blank"><img align="center" src="https://simpleicons.org/icons/medium.svg" alt="Medium" height="30" width="40" /></a>
-<a href="https://t.me/VibolVatanak" target="_blank"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" height="30" width="40" /></a>
-</p>
+
 
 For further inquiries or to discuss potential collaborations, please feel free to connect with me.

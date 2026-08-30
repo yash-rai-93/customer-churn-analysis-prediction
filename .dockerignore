@@ -1,0 +1,32 @@
+# Git
+.git
+.gitignore
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebooks (not needed at runtime)
+*.ipynb
+.ipynb_checkpoints/
+
+# Data files (large, not needed by the app)
+Telco-Customer-Churn.csv
+tel_churn_clean.csv
+
+# Docs and assets not used at runtime
+README.md
+Instruction.pdf
+"Power BI"/
+
+# IDE settings
+.idea/
+.vscode/
